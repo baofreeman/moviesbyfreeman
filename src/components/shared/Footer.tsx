@@ -114,7 +114,7 @@ const Footer = () => {
 
       <div>
         <h2 className="text-base uppercase font-bold text-white tracking-wide border-b border-b-gray-600 py-2 mb-5 relative">
-          Categorye
+          Category
           <span className="w-16 h-1 bg-red-600 inline-block absolute left-0 -bottom-[1.5px] z-10"></span>
         </h2>
         <Information category={true} />
