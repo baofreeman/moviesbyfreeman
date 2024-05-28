@@ -30,7 +30,7 @@ const HeroCarousel = ({ movies }: Props) => {
               <h2 className="text-5xl font-bold max-w-xl">{movie?.title}</h2>
               <p className="max-w-xl line-clamp-3">{movie.overview}</p>
             </div>
-            <div className="absolute top-0 left-0 inset-0 bg-gradient-to-b from-gray-900/100 via-gray-900/30 to-gray-300 dark:to-[#121212]"></div>
+            <div className="absolute top-0 left-0 inset-0 bg-gradient-to-b from-gray-900/100 via-gray-900/30 to-gray-300 dark:to-[#121212] z-10"></div>
           </div>
         ))}
       </div>

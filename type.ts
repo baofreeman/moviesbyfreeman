@@ -32,13 +32,18 @@ export type Genres = {
 };
 
 export type VideoProps = {
-  offical: boolean;
+  official: boolean;
   published_at: string;
   site: string;
   size: number;
   type: string;
 };
 
+export interface VideoPropsExtend extends VideoProps {
+  id: string;
+  key: string;
+}
+
 export type Videos = {
-  videos: VideoProps[];
+  videos: VideoPropsExtend[];
 };

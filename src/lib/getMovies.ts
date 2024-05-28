@@ -48,7 +48,7 @@ export const getTopRatedMovies = async () => {
 };
 
 export const getSearchedMovies = async (term: string) => {
-  const url = new URL(`${process.env.TMBD_URL}/3/movie/top_rated`);
+  const url = new URL(`${process.env.TMBD_URL}/3/search/movie`);
   url.searchParams.set("query", term);
   const data = await fetcher(url);
   return data?.results;
