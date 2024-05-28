@@ -53,6 +53,7 @@ const Information = ({ category }: { category?: boolean }) => {
       {category
         ? categoryArray.map((item) => (
             <Link
+              key={item.title}
               href={item.href}
               title={item.title}
               className="hover:text-white text-sm mb-1 cursor-pointer duration-200 border-b border-b-[#222] py-1 flex items-center gap-x-3 group:"
@@ -63,6 +64,7 @@ const Information = ({ category }: { category?: boolean }) => {
           ))
         : infoArray.map((item) => (
             <Link
+              key={item.title}
               href={item.href}
               title={item.title}
               className="hover:text-white text-sm mb-1 cursor-pointer duration-200 border-b border-b-[#222] py-1 flex items-center gap-x-3 group:"
