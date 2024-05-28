@@ -7,7 +7,7 @@ const nextConfig = {
         hostname: "streamtube.marstheme.com",
       },
       {
-        protocol: "http",
+        protocol: "https",
         hostname: "image.tmdb.org",
       },
       {
