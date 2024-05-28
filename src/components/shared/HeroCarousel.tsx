@@ -14,7 +14,6 @@ const HeroCarousel = ({ movies }: Props) => {
   const [emblaRef] = useEmblaCarousel({ loop: true, duration: 100 }, [
     Autoplay(),
   ]);
-  console.log(movies);
   return (
     <div className="overflow-hidden cursor-pointer relative" ref={emblaRef}>
       <div className="flex">
